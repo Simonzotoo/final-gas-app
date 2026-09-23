@@ -57,6 +57,7 @@ Future<bool> onIosBackgroundGasCheck(ServiceInstance service) async {
   return true;
 }
 
+@pragma('vm:entry-point')
 class BackgroundGasMonitor {
   StreamSubscription<DatabaseEvent>? _backgroundSubscription;
   Timer? _heartbeatTimer;
